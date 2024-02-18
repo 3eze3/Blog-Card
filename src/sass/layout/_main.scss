@@ -1,0 +1,58 @@
+@use "../abtract/variables" as color_bg;
+@use "../abtract/mixins" as layout;
+.card {
+  border-radius: color_bg.$radius;
+  outline: solid color_bg.$black 1px;
+  padding: 1.25rem;
+  height: fit-content;
+  width: 24rem;
+  box-shadow: 0.6rem 0.6rem 0rem 0rem #000;
+  transition: box-shadow ease 0.4s;
+  &:hover {
+    box-shadow: 0.9rem 0.9rem 0rem 0rem #000;
+    transition: box-shadow ease 0.5s;
+  }
+  &__wrapper {
+    border-radius: color_bg.$radius;
+    @include layout.flex($gap: 1.35rem);
+  }
+
+  &__ilustration {
+    border-radius: color_bg.$radius;
+  }
+
+  &__label {
+    text-align: center;
+    width: 5rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    border-radius: 0.3rem;
+    background-color: color_bg.$yellow;
+    margin-bottom: 0.7rem;
+  }
+
+  &__category {
+    font-size: color_bg.$sm;
+  }
+
+  &__content {
+    @include layout.flex($gap: 1rem);
+    gap: 1rem;
+  }
+
+  &__author {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.65rem;
+  }
+
+  &__imageAvatar {
+    width: 2.1rem;
+  }
+
+  &__name {
+    font-size: color_bg.$sm;
+  }
+}
