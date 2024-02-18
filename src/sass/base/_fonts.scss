@@ -1,22 +1,53 @@
+@use "../abtract/variables" as color_bg;
+@font-face {
+  font-family: "Figtree ExBold";
+  src: url("../assets/fonts/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Figtree SmBold";
+  src: url("../assets/fonts/Figtree-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Figtree wght";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
 body {
   min-height: 100dvh;
-  font-size: 100%;
+  font-size: color_bg.$rg;
   hyphens: manual;
   font-smooth: always;
+  font-family: "Figtree wght";
+  background-color: color_bg.$yellow;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-content: center;
+}
+
+h1,
+span {
+  color: color_bg.$black;
 }
 
 h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
+  font-size: color_bg.$lg;
+  font-family: "Figtree ExBold";
+  transition: color ease-in-out 1s;
+  &:hover {
+    color: color_bg.$yellow;
+    cursor: pointer;
+    transition: color ease-in-out 1s;
+  }
 }
 
-svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
+span {
+  font-family: "Figtree SmBold";
+}
+
+p {
+  color: color_bg.$grey;
+  line-height: 1.5em;
 }
