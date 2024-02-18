@@ -12,17 +12,34 @@
     <title>Blog preview card</title>
   </head>
   <body>
-    <!--  -->
-    Learning
-    <!--  -->
-    Published 21 Dec 2023
-    <!--  -->
-    HTML & CSS foundations
-    <!--  -->
-    These languages are the backbone of every website, defining structure,
-    content, and presentation.
-    <!--  -->
-    Greg Hooper
-    <!--  -->
+    <main class="card">
+      <article class="card__wrapper">
+        <img
+          class="card__ilustration"
+          src="./assets/images/illustration-article.svg"
+          aria-hidden="true" />
+
+        <div class="card__meta">
+          <div class="card__category">Learning</div>
+          <span class="card__published">Published 21 Dec 2023 </span>
+        </div>
+        <!--  -->
+        <section class="card__content">
+          <h1 class="card__title">HTML & CSS foundations</h1>
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <!--  -->
+          <div class="card__author">
+            <img
+              class="card__imageAvatar"
+              src="./assets/images/image-avatar.webp"
+              alt="Author Greg Hooper" />
+            <span class="card__name">Greg Hooper </span>
+          </div>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
