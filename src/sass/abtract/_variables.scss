@@ -1,21 +1,12 @@
-// - Mobile: 375px
-// - Desktop: 1440px
-
-// ### Primary
-
-// - Yellow: hsl(47, 88%, 63%)
-
-// ### Neutral
-
-// - White: hsl(0, 0%, 100%)
-// - Grey: hsl(0, 0%, 50%)
-// - Black: hsl(0, 0%, 7%)
-
-// ### Body Copy
-
-// - Font size (paragraph): 16px
-
-// ### Font
-
-// - Family: [Figtree](https://fonts.google.com/specimen/Figtree)
-// - Weights: 600, 800
+// ------ Color Primary ------
+$yellow: hsl(47, 88%, 63%);
+// ------ Primary Neutral ------
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+// ------ Font-Size ------
+$lg: 1.45em;
+$rg: 1.03em;
+$sm: 0.87em;
+// ------ Box-Shadow ------
+$radius: 1rem;
